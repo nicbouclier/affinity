@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <CopilotKit
       runtimeUrl="/api/copilotkit"
-      agent="affinity_agent"
     >
       <div className="flex h-screen w-full">
         <CopilotSidebar
