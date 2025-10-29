@@ -83,7 +83,7 @@ const runtime = new CopilotRuntime({
 
 const serviceAdapter = new AnthropicAdapter({
   apiKey: process.env.ANTHROPIC_API_KEY,
-  model: "claude-3-sonnet-20240229",
+  model: "claude-3-haiku-20240307",
 });
 
 export const POST = async (req: NextRequest) => {
