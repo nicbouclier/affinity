@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="url(#gradient)"/>
+
+  <!-- Letter 'A' -->
+  <path d="M256 120L356 400H316L296 350H216L196 400H156L256 120Z" fill="white"/>
+  <path d="M230 310H282L256 230L230 310Z" fill="#6138F5"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6138F5"/>
+      <stop offset="50%" stop-color="#805FF6"/>
+      <stop offset="100%" stop-color="#1F69FF"/>
+    </linearGradient>
+  </defs>
+</svg>

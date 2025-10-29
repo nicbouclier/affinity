@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    /* Xfinity-inspired primary colors */
+    --primary: 255 45% 58%; /* #6138F5 Electric Violet */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 348 100% 45%; /* #E6004A Red Ribbon */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 255 45% 58%;
+    --radius: 0.5rem;
+
+    --chart-1: 255 45% 58%;
+    --chart-2: 348 100% 45%;
+    --chart-3: 218 100% 56%;
+    --chart-4: 158 64% 52%;
+    --chart-5: 43 96% 56%;
+  }
+
+  .dark {
+    --background: 258 45% 4%; /* Dark purple background */
+    --foreground: 0 0% 98%;
+    --card: 258 45% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 258 45% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 255 45% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 348 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 258 30% 15%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 258 30% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 258 30% 18%;
+    --input: 258 30% 18%;
+    --ring: 255 45% 58%;
+
+    --chart-1: 255 45% 58%;
+    --chart-2: 348 100% 45%;
+    --chart-3: 218 100% 56%;
+    --chart-4: 158 64% 52%;
+    --chart-5: 43 96% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--secondary));
+}
